@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Pratham's Resume</title>
-    <link rel="stylesheet" href="css/master.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pratham's Resume</title>
+  <link rel="stylesheet" href="css/master.css" />
+</head>
 
-  <body>
-    <!-- Banner Section with Background Image -->
-    <div class="banner-section">
-      <img src="images/myphoto.jpeg" alt="Pratham's Headshot" class="profile-pic">
-      <h1>Pratham Mamidi</h1>
-      <h4>B.Tech IT Student | Cybersecurity Enthusiast | MERN Stack Developer</h4>
-
-      <p>Email: 
-        <a href="mailto:prathammamidi07@gmail.com" target="_blank">
-          prathammamidi07@gmail.com
-        </a>
-      </p>
-    </div>
-
-    <h2>Portfolio</h2>
-    <h3>GitHub: 
-      <a href="https://github.com/Poken-ninja" target="_blank">
-        https://github.com/Poken-ninja
+<body>
+  <!-- 🔥 Banner Section -->
+  <div class="banner-section">
+    <img src="images/myphoto.jpeg" alt="Pratham's Headshot" class="profile-pic" />
+    <h1>Pratham Mamidi</h1>
+    <h4>Cybersecurity Enthusiast • Web Developer • Learner</h4>
+    <p>
+      Email:
+      <a href="mailto:prathammamidi07@gmail.com" target="_blank">
+        prathammamidi07@gmail.com
       </a>
-    </h3>
+    </p>
+    <!-- 📄 Resume Download Button -->
+    <a href="resume.pdf" download class="download-btn">📄 Download My Resume</a>
+  </div>
 
-    <h3>LinkedIn: 
-      <a href="https://www.linkedin.com/in/pratham-mamidi" target="_blank">
-        https://www.linkedin.com/in/pratham-mamidi
-      </a>
-    </h3>
+  <section>
+    <h2>📬 Contact</h2>
+    <p>GitHub: <a href="https://github.com/Poken-ninja" target="_blank">github.com/Poken-ninja</a></p>
+  </section>
 
-    <h2>Education</h2>
-    <h3>SR International Institute of Technology (Expected 2027)</h3>
-    <h4>B.Tech in Information Technology</h4>
+  <section>
+    <h2>🎓 Education</h2>
+    <h3>University of Massachusetts, Lowell</h3>
+    <h4>B.Tech in Computer Science</h4>
+  </section>
 
-    <h3>Narayana Junior College, LB Nagar</h3>
-    <h4>Intermediate (94.6%)</h4>
-
-    <h3>St. Joseph’s Public School, Habsiguda</h3>
-    <h4>10th ICSE (88.2%)</h4>
-
-    <h2>Internships</h2>
-    <h3>Technical Intern</h3>
-    <h4>Mister Programmatic</h4>
-    <h5>June 2025 – Present</h5>
+  <section>
+    <h2>🧠 Certifications</h2>
     <ul>
-      <li>Learning practical cybersecurity and advertising systems</li>
+      <li>✔️ Prompt Engineering by DeepLearning.AI</li>
+      <li>✔️ Python for AI by DeepLearning.AI</li>
+      <li>🕐 Google Cybersecurity Certificate (in progress)</li>
+      <li>🕐 AWS Cloud Foundation (in progress)</li>
+      <li>🕐 CompTIA Security+ Prep (in progress)</li>
     </ul>
+  </section>
 
-    <h2>Certifications</h2>
-    <h3>✅ Completed</h3>
+  <section>
+    <h2>💼 Internships</h2>
     <ul>
-      <li>Prompt Engineering for ChatGPT – DeepLearning.AI</li>
-      <li>Python for AI – DeepLearning.AI</li>
+      <li>Marketing Internship at Mister Programmatic</li>
     </ul>
+  </section>
 
-    <h3>📚 Pursuing (In Progress)</h3>
-    <ul>
-      <li>Google Cybersecurity Professional Certificate (Coursera)</li>
-      <li>IBM Cybersecurity Analyst Pathway (Coursera)</li>
-      <li>Cybersecurity Tools Guided Projects (Linux, Wireshark, Kali)</li>
-      <li>Git and GitHub for Beginners (Coursera)</li>
-      <li>Web Dev with HTML/CSS (Coursera Guided Project)</li>
-    </ul>
+  <footer>
+    <p>
+      Made with ❤️ by Pratham •
+      <a href="https://github.com/Poken-ninja/portfolio-website" target="_blank">Source Code</a>
+    </p>
+  </footer>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Cybersecurity Tools: Kali Linux, Wireshark, Nmap</li>
-      <li>Web Development: HTML, CSS, JavaScript, React, Node.js, MongoDB</li>
-      <li>Platforms: GitHub, VS Code, Linux</li>
-      <li>Cloud: AWS (basic)</li>
-      <li>Soft Skills: Communication, Collaboration, Research</li>
-    </ul>
-  </body>
+  <!-- ⬆️ Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTop">⬆️</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
 </html>
