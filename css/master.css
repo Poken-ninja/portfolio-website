@@ -130,3 +130,19 @@ footer {
     padding: 0.5rem 1rem;
   }
 }
+/* 👔 LinkedIn Button */
+.linkedin-btn {
+  background-color: #0077b5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.linkedin-btn:hover {
+  background-color: #005f8d;
+}
+
