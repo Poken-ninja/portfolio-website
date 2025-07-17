@@ -19,9 +19,7 @@
         prathammamidi07@gmail.com
       </a>
     </p>
-    <!-- 📄 Resume Download Button -->
     <a href="resume.pdf" download class="download-btn">📄 Download My Resume</a><br>
-    <!-- 👔 LinkedIn Button -->
     <a href="https://www.linkedin.com/in/pratham-mamidi" class="linkedin-btn" target="_blank">👔 Connect on LinkedIn</a>
   </div>
 
@@ -31,50 +29,47 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/pratham-mamidi" target="_blank">linkedin.com/in/pratham-mamidi</a></p>
   </section>
 
-    <section>
+  <section>
     <h2>🎓 Education</h2>
     <h3>University of Massachusetts, Lowell</h3>
     <h4>B.Tech in Computer Science</h4>
   </section>
 
+  <!-- 🔘 Filter Buttons -->
   <section>
-    <h2>🛡️ Cybersecurity Projects</h2>
-
-    <div class="project">
-      <h3>Phishing Simulation – Mastercard (Forage)</h3>
-      <p>Designed a contextual phishing email using social engineering tactics and urgency. After the simulation, analyzed failure rates across departments and created a targeted awareness training deck for HR and Marketing.</p>
-    </div>
-
-    <div class="project">
-      <h3>ANZ Cyber Security Virtual Experience (Forage)</h3>
-      <p>Completed simulated tasks like malware PCAP analysis, document recovery from TCP streams, phishing identification, and digital forensics.</p>
-    </div>
-
-    <div class="project">
-      <h3>Network Traffic Analysis – DNS & ICMP</h3>
-      <p>Diagnosed DNS resolution failure using tcpdump and ICMP errors. Authored a structured technical report of findings and recommended actions.</p>
-      <a href="https://lnkd.in/gNGeNTWN" target="_blank">View Report</a>
-    </div>
-
-    <div class="project">
-      <h3>Security Controls & Compliance Audit – Botium Toys</h3>
-      <p>Performed a mock security audit evaluating Least Privilege, IDS, PCI-DSS and GDPR practices. Delivered professional audit docs including risk, rationale, and controls.</p>
-      <a href="https://lnkd.in/gbUki_T6" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Secure File Transfer System</h3>
-      <p>Python-based CLI tool using encryption, password strength enforcement, encryption logs, and optional file backups.</p>
-      <a href="https://github.com/Poken-ninja/SecureFileTransfer" target="_blank">GitHub Repository</a>
-    </div>
-
-    <div class="project">
-      <h3>Tata Cybersecurity Analyst (Forage)</h3>
-      <p>Simulated IAM management consulting role for Tata Consultancy Services, focusing on identity, access control, and business-aligned security strategy.</p>
+    <h2>🚀 My Work</h2>
+    <div id="filter-buttons">
+      <button onclick="filterContent('all')">All</button>
+      <button onclick="filterContent('project')">Cybersecurity Projects</button>
+      <button onclick="filterContent('cert')">Certifications</button>
+      <button onclick="filterContent('workshop')">Workshops</button>
     </div>
   </section>
 
-  <section>
+  <!-- 🛡️ Projects -->
+  <section class="filter-item project">
+    <h2>🛡️ Cybersecurity Projects</h2>
+    <h3>Phishing Simulation – Mastercard (Forage)</h3>
+    <p>Designed a realistic phishing email, analyzed department-wise failure rates, and built a training deck for HR and Marketing.</p>
+
+    <h3>ANZ Cyber Security Virtual Experience</h3>
+    <p>Worked on PCAP malware analysis, file recovery, and phishing detection using Wireshark and HxD.</p>
+
+    <h3>Network Traffic Analysis – DNS & ICMP</h3>
+    <p>Investigated DNS resolution failures using tcpdump and ICMP error codes. <a href="https://lnkd.in/gNGeNTWN" target="_blank">View report</a></p>
+
+    <h3>Security Audit – Botium Toys</h3>
+    <p>Evaluated Least Privilege, IDS, PCI-DSS & GDPR compliance. <a href="https://lnkd.in/gbUki_T6" target="_blank">View GitHub write-up</a></p>
+
+    <h3>Secure File Transfer System</h3>
+    <p>CLI tool in Python for encrypted file transfer with logging and backup. <a href="https://github.com/Poken-ninja/SecureFileTransfer" target="_blank">GitHub Repo</a></p>
+
+    <h3>Tata Cybersecurity Analyst (Forage)</h3>
+    <p>Simulated IAM audit for Tata Consultancy, focusing on business-aligned identity access controls.</p>
+  </section>
+
+  <!-- 📜 Certifications -->
+  <section class="filter-item cert">
     <h2>📜 Certifications</h2>
     <ul>
       <li>✔️ Prompt Engineering – DeepLearning.AI</li>
@@ -85,7 +80,8 @@
     </ul>
   </section>
 
-  <section>
+  <!-- 🛠️ Workshops -->
+  <section class="filter-item workshop">
     <h2>🛠️ Technical Workshops</h2>
     <ul>
       <li>AI/ML + Chatbot Workshop – Built a working AI chatbot</li>
@@ -94,6 +90,7 @@
     </ul>
   </section>
 
+  <!-- 💼 Internships -->
   <section>
     <h2>💼 Internships</h2>
     <ul>
@@ -108,3 +105,25 @@
       <a href="https://github.com/Poken-ninja/portfolio-website" target="_blank">Source Code</a>
     </p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTop">⬆️</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function filterContent(category) {
+      const items = document.querySelectorAll('.filter-item');
+      items.forEach(item => {
+        if (category === 'all') {
+          item.style.display = 'block';
+        } else {
+          item.style.display = item.classList.contains(category) ? 'block' : 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

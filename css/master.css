@@ -145,4 +145,23 @@ footer {
 .linkedin-btn:hover {
   background-color: #005f8d;
 }
+/* 🎯 Filter Buttons Styling */
+#filter-buttons {
+  margin: 1rem 0;
+}
 
+#filter-buttons button {
+  background-color: #075aab;
+  color: white;
+  border: none;
+  margin: 0 6px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+#filter-buttons button:hover {
+  background-color: #003f7d;
+}
